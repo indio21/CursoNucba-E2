@@ -5,6 +5,10 @@
 
 }
 
+:root{
+    --color-letra: rgb(7, 7, 71);
+    --text-white: white;
+}
 .header {
     display: flex;
     flex-direction: row;
@@ -45,4 +49,104 @@ a:hover {
 #logo{
     text-decoration: none; 
     padding: 20px;
+}
+
+/* SECTION HERO */
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-letra);
+    gap:20px;
+}
+
+#hero {
+    padding: 70px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#text-hero {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width:40%;
+    padding:10px;
+}
+
+#text-hero h1 {
+    font-size: 36px;
+    width:80%;
+    min-width: 500px;
+    font-weight: 800;
+}
+
+#text-hero p {
+    font-size: 18px;
+    min-width: 350px;
+    padding: 20px 5px;
+    text-align: justify;
+
+}
+
+#image-hero{
+    width:280px;
+    background: lightgrey;
+    padding:10px;
+    border-radius:15px;
+    justify-content: center;
+    align-items: center;
+}
+
+#image-hero img{
+    width: 260px;
+    height: 260px;
+    border-radius: 5px;
+}
+
+#text-hero .botones {
+    gap:60px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+#text-hero .botones a{
+    color:var(--text-white);
+    background-color: blue;
+    padding:20px 40px;
+    border-radius:15px;
+    font-size:14px;
+    text-align:center;
+    justify-content: center;
+    margin-left:35px;
+
+}
+
+#text-hero .botones a:hover{
+    background-color: darkblue;
+}
+
+#introduction {
+    background-color: lightskyblue;
+    padding:20px;
+    font-size: 28px;
+    width:100%;
+    min-width: 500px;
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#introduction h2 {
+    font-size: 36px;
+    width:100%;
+    min-width: 500px;
+    font-weight: 500;
+    text-align: center;
+
 }
