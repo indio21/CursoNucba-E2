@@ -1,64 +1,67 @@
-*   {   
-    box-sizing: border-box; 
+* {
+    box-sizing: border-box;
     padding: 0px;
     margin: 0px;
 
 }
 
-:root{
+:root {
     --color-letra: rgb(7, 7, 71);
     --text-white: white;
 }
+
 .header {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     flex-wrap: nowrap;
     border-bottom: 1px rgb(13, 55, 117) solid;
     align-items: center;
 }
+
 .navbar-brand {
-    padding-right: 30px;;
+    padding-right: 30px;
+    ;
 }
 
-ul { 
+ul {
     list-style-type: none;
     display: flex;
     flex-direction: row;
     gap: 20px;
-} 
-
-a { 
-    color: rgb(13, 55, 117); 
-    text-decoration: none; 
 }
 
-a:hover { 
-    text-decoration: none; 
+a {
+    color: rgb(13, 55, 117);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
     color: rgb(7, 7, 71);
-} 
+}
 
 
 .navbar {
-   font-size: 20px;
-   font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
-#logo{
-    text-decoration: none; 
+#logo {
+    text-decoration: none;
     padding: 20px;
 }
 
 /* SECTION HERO */
-.main{
+.main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: var(--color-letra);
-    gap:20px;
+    gap: 20px;
 }
 
 #hero {
@@ -73,13 +76,13 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    width:40%;
-    padding:10px;
+    width: 40%;
+    padding: 10px;
 }
 
 #text-hero h1 {
     font-size: 36px;
-    width:80%;
+    width: 80%;
     min-width: 500px;
     font-weight: 800;
 }
@@ -92,49 +95,49 @@ a:hover {
 
 }
 
-#image-hero{
-    width:280px;
+#image-hero {
+    width: 280px;
     background: lightgrey;
-    padding:10px;
-    border-radius:15px;
+    padding: 10px;
+    border-radius: 15px;
     justify-content: center;
     align-items: center;
 }
 
-#image-hero img{
+#image-hero img {
     width: 260px;
     height: 260px;
     border-radius: 5px;
 }
 
 #text-hero .botones {
-    gap:60px;
+    gap: 60px;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
 
-#text-hero .botones a{
-    color:var(--text-white);
+#text-hero .botones a {
+    color: var(--text-white);
     background-color: blue;
-    padding:20px 40px;
-    border-radius:15px;
-    font-size:14px;
-    text-align:center;
+    padding: 20px 40px;
+    border-radius: 15px;
+    font-size: 14px;
+    text-align: center;
     justify-content: center;
-    margin-left:35px;
+    margin-left: 35px;
 
 }
 
-#text-hero .botones a:hover{
+#text-hero .botones a:hover {
     background-color: darkblue;
 }
 
 #introduction {
     background-color: lightskyblue;
-    padding:20px;
+    padding: 20px;
     font-size: 28px;
-    width:100%;
+    width: 100%;
     min-width: 500px;
     font-weight: 300;
     justify-content: center;
@@ -144,9 +147,84 @@ a:hover {
 
 #introduction h2 {
     font-size: 36px;
-    width:100%;
+    width: 100%;
     min-width: 500px;
     font-weight: 500;
     text-align: center;
 
+}
+
+.subrayado {
+    text-decoration: underline;
+}
+
+#info {
+    padding: 28px 0;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+#info h2 {
+    font-size: 32px;
+    font-weight: 800;
+}
+
+
+.info-cards-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 1px solid var(--color-letra);
+}
+
+.info-card {
+    width: 300px;
+    height: 300px;
+    padding: 48px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    gap: 20px;
+    background: lightgray;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.info-card img {
+    width: 150px;
+    height: 120px;
+    border-radius: 5px;
+}
+
+.info-card h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.info-card p {
+    font-size: 18px;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.25);
+    }
+
+}
+
+.transition:hover {
+    animation: scale 2s infinite;
 }
