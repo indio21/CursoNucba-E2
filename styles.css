@@ -226,11 +226,67 @@ a:hover {
 }
 
 .transition:hover {
-    animation: scale 2s infinite;
+    
+}
+
+
+
+#contact{
+    justify-content: center;
+    align-items: left;
+    max-width: 1800px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contact-container{
+    display: flex;
+    justify-content: space-around;
+    width:800px;
+    gap: 50px;
+    padding: 20px;
+}
+
+#contact h2{
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.contact-data{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-data img{
+    width: 50px;
+    height: 50px;
+}
+
+.contact-map img {
+    border-radius: 8px;
 }
 
 footer{
     text-align: center;
     justify-content: center;
+    border-top: 1px solid var(--color-letra);
+    border-width: 100%;
+    padding: 20px;
 }
 
+@keyframes movi{
+    0% {
+        transform: translateX(-10px);
+    }
+
+    100% {
+        transform: translateX(60px);
+    }
+
+}
+
+footer .movi {
+    animation: movi 3s infinite;
+}
