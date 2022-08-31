@@ -228,3 +228,9 @@ a:hover {
 .transition:hover {
     animation: scale 2s infinite;
 }
+
+footer{
+    text-align: center;
+    justify-content: center;
+}
+
